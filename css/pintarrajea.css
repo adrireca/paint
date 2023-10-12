@@ -1,0 +1,45 @@
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.divSelector table{
+    margin: auto;
+}
+
+#selector td, .seleccionado{
+    border: 1px solid #ccc;
+    padding: 10px 70px;
+}
+
+.rojo, .celdarojo{
+    background: #ff0000;
+}
+
+.amarillo, .celdaamarillo{
+    background: #fffb00;
+}
+
+.verde, .celdaverde{
+    background: #00ff15;
+}
+
+.azul, .celdaazul{
+    background: #0011ff;
+}
+
+.lila, .celdalila{
+    background: #8c00ff;
+}
+
+.blanco, .celdablanco{
+    background: #ffffff;
+}
+.seleccionado{
+    text-align: center;
+}
+
+.lienzo td{
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+}
