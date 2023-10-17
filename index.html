@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pintarrajea</title>
+    <title>Paint</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/svg" href="imgs/favicon1.svg">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/pintarrajea.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="main">
 
-        <div class="divSelector">
-            <table>
-                <tr id="selector">
-                    <td class="rojo"></td>
-                    <td class="amarillo"></td>
-                    <td class="verde"></td>
-                    <td class="azul"></td>
-                    <td class="lila"></td>
-                    <td class="blanco"></td>
-                </tr>
-                <tr>
-                    <td class="seleccionado" colspan="6">SELECCIONADO: </td>
-                </tr>
-            </table>
+        <div class="text-center divSelector">
+            <div class="" style="display: flex;" id="selector">
+                <div class="rojo"></div>
+                <div class="amarillo"></div>
+                <div class="verde"></div>
+                <div class="azul"></div>
+                <div class="lila"></div>
+                <div class="rosa"></div>
+            </div>
         </div>
 
         <div class="lienzo"></div>
 
-        <button class="btn" type="button">Borrar</button>
+        <button class="blanco borrar btn btn-outline-dark mt-2" type="button">Borrar</button>
+        <button class="reset btn btn-outline-dark mt-2" type="button">Reset</button>
     </div>
 
+    <!-- Bootstrap. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Mi script. -->
     <script src="pintarrajea.js"></script>
 </body>
 

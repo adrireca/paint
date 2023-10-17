@@ -1,45 +1,91 @@
-.container{
-    width: 70%;
-    margin: auto;
+body {
+    background-image: linear-gradient(135deg, #92FFC0 10%, #002661 100%);
 }
 
-.divSelector table{
+.main {
+    max-width: 1320px;
+    height: 100vh;
     margin: auto;
+    padding: 20px 0;
 }
 
-#selector td, .seleccionado{
-    border: 1px solid #ccc;
+.divSelector {
+    margin-bottom: 20px;
+}
+
+#selector {
+    height: 60px;
+}
+
+#selector .rojo,
+#selector .amarillo,
+#selector .verde,
+#selector .azul,
+#selector .lila,
+#selector .rosa {
+    flex: 1 0 0%;
+}
+
+.seleccionado {
     padding: 10px 70px;
 }
 
-.rojo, .celdarojo{
+.lienzo {
+    background-color: #fff;
+}
+
+.lienzo .tabla {
+    width: 100%;
+}
+
+.rojo,
+.amarillo,
+.verde,
+.azul,
+.lila,
+.rosa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.rojo,
+.celdarojo {
     background: #ff0000;
 }
 
-.amarillo, .celdaamarillo{
+.amarillo,
+.celdaamarillo {
     background: #fffb00;
 }
 
-.verde, .celdaverde{
+.verde,
+.celdaverde {
     background: #00ff15;
 }
 
-.azul, .celdaazul{
+.azul,
+.celdaazul {
     background: #0011ff;
 }
 
-.lila, .celdalila{
+.lila,
+.celdalila {
     background: #8c00ff;
 }
 
-.blanco, .celdablanco{
-    background: #ffffff;
+.rosa,
+.celdarosa {
+    background: #ffc0cb;
 }
-.seleccionado{
+
+.seleccionado {
     text-align: center;
 }
 
-.lienzo td{
+.lienzo td {
     padding: 10px 10px;
-    border: 1px solid #ccc;
 }
