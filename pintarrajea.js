@@ -15,7 +15,7 @@ function generarTabla() {
 
   for (var i = 0; i < 30; i++) {
     let tr = document.createElement("tr");
-    for (var j = 0; j < 10; j++) {
+    for (var j = 0; j < 30; j++) {
       let td = document.createElement("td");
       td.setAttribute('name', 'celdas');
       td.setAttribute('onclick', 'esPintar()');
