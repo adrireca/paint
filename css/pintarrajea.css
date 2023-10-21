@@ -1,12 +1,13 @@
 body {
     background-image: linear-gradient(135deg, #92FFC0 10%, #002661 100%);
+    background-color: #212121;
 }
 
 .main {
     max-width: 1320px;
     height: 100vh;
     margin: auto;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .divSelector {
@@ -14,6 +15,8 @@ body {
 }
 
 #selector {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     height: 60px;
 }
 
@@ -88,4 +91,23 @@ body {
 
 .lienzo td {
     padding: 10px 10px;
+}
+
+
+
+/* Media queries. */
+@media(max-width: 414px) {
+    #selector {
+        grid-template-columns: repeat(3, 1fr);
+        height: 100px;
+    }
+
+    .rojo,
+    .amarillo,
+    .verde,
+    .azul,
+    .lila,
+    .rosa {
+        font-size: .9em;
+    }
 }
